@@ -104,6 +104,15 @@
                                     <action selector="sendMailButttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDb-1o-9IE"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTG-hv-B3Z">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="250" width="196" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +122,7 @@
                                 <exclude reference="v2o-5e-CUe"/>
                                 <exclude reference="lfJ-OP-pAu"/>
                                 <exclude reference="Iia-Km-fDb"/>
+                                <exclude reference="MTG-hv-B3Z"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,10 +132,12 @@
                                 <include reference="v2o-5e-CUe"/>
                                 <include reference="lfJ-OP-pAu"/>
                                 <include reference="Iia-Km-fDb"/>
+                                <include reference="MTG-hv-B3Z"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="NameLabel" destination="MTG-hv-B3Z" id="qbO-6U-eU5"/>
                         <outlet property="enterMessageTextField" destination="v2o-5e-CUe" id="lQ9-G7-gtQ"/>
                         <outlet property="enterNameTextField" destination="EvQ-Lc-lct" id="AGq-jN-Y4q"/>
                         <outlet property="mailButton" destination="Iia-Km-fDb" id="LQO-fb-g4M"/>
